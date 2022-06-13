@@ -89,7 +89,7 @@ const questions = [
   {
     type: 'list',
     name: 'licenses',
-    message: "Choose which license you're using",
+    message: "Choose which license you're using:",
     choices: ['MIT license', 'GPL'],
     default: questions[0],
   },
@@ -97,8 +97,9 @@ const questions = [
     type: 'input',
     name: 'username',
     message: 'Provide your github username',
-    validate: () => {
-
+    validate: (username) => {
+      if(username) true
+      return 'Please provide your github username.'
     }
   }
 ];
