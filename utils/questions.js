@@ -87,6 +87,15 @@ const questions = [
     }
   },
   {
+    type:'input',
+    name:'tech',
+    message: "List the technology used in the project, separated by commas.",
+    validate: (tech) => {
+      if(tech) true
+      return 'Please provide the technology used in this project.'
+    }
+  },
+  {
     type: 'list',
     name: 'licenses',
     message: "Choose which license you're using:",
@@ -101,5 +110,46 @@ const questions = [
       if(username) true
       return 'Please provide your github username.'
     }
+  },
+  {
+    type: 'list',
+    name: 'license',
+    message: 'Please select a license for your project.',
+    choices: [
+      {
+				name: 'MIT',
+				value: 'mit',
+			},
+			{
+				name: 'GNU GPLv3',
+				value: 'gpl-3.0',
+			},
+			{
+				name: 'GNU AGPLv3',
+				value: 'agpl-3.0',
+			},
+			{
+				name: 'GNU LGPLv3',
+				value: 'lgpl-3.0',
+			},
+			{
+				name: 'APACHE 2.0',
+				value: 'apache-2.0',
+			},
+			{
+				name: 'Mozilla Public 2.0',
+				value: 'mpl-2.0',
+			},
+			{
+				name: 'The Unlicense',
+				value: 'unlicense',
+			},
+			{
+				name: 'Boost Software 1.0 ',
+				value: 'bsl-1.0',
+			},
+    ]
   }
 ];
+
+module.exports = questions;
