@@ -16,12 +16,11 @@
 https://github.com/honeyai/Dynamic-READme<br>
 
 ## Third Party Used:<br>
-inquirer.js[inquirer.js]https://www.npmjs.com/package/inquirer
+[inquirer.js](https://www.npmjs.com/package/inquirer)
+[promisfy.js](https://www.npmjs.com/package/promisfy)
   
 ## Project Objective
 READmes are full of information. It's hard to always remember what you need to include and even then you might forget a section. This CLI aims at helping in that process by providing all the prompts and filling in a READme with your answers.
-
-
 
 ## Technologies 
 ```
@@ -35,9 +34,7 @@ Ensure you have node.js on your system. After closing this repo, run ```npm i```
 ## Usage 
 Once you run ```node index.js``` answer all the prompts. Once that's done, you should shortly see a new READme file or if you already have one it should write the new info provided into the existing READme.
 
-
-## Credits and Reference
-undefined
+[Video example](https://drive.google.com/file/d/1QDUR2V3JC8ClvOgJmhkkMAqCEAx2vhvy/view)
 
 ## License
 This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.<br />
