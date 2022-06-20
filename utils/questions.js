@@ -59,7 +59,7 @@ const questions = [
     },
     validate: (collab) => {
       if (collab) {
-        if (collab.length % 2 === 0 || collab.split(',').length) return true
+        if (collab.split(",").length % 2 === 0) return true
         return "You're missing either a name or link to that individual.";
       }
       return 'List your collaborators separated by a comma.';
@@ -80,7 +80,7 @@ const questions = [
     },
     validate: (thirdParty) => {
       if (thirdParty) {
-        if (thirdParty.split(',').length % 2 === 0 || thirdParty.split(',').length) return true;
+        if (thirdParty.split(',').length % 2 === 0) return true;
         return "You're missing either a name or a link to that asset.";
       }
       return 'List the third party assets you use and the link to that asset.';
@@ -115,23 +115,23 @@ const questions = [
       },
       {
         name: 'GNU GPLv3',
-        value: 'gpl-3.0',
+        value: 'gpl',
       },
       {
         name: 'GNU AGPLv3',
-        value: 'agpl-3.0',
+        value: 'agpl',
       },
       {
         name: 'GNU LGPLv3',
-        value: 'lgpl-3.0',
+        value: 'lgpl',
       },
       {
         name: 'APACHE 2.0',
-        value: 'apache-2.0',
+        value: 'apache',
       },
       {
         name: 'Mozilla Public 2.0',
-        value: 'mpl-2.0',
+        value: 'mozpub',
       },
       {
         name: 'The Unlicense',
@@ -139,7 +139,7 @@ const questions = [
       },
       {
         name: 'Boost Software 1.0 ',
-        value: 'bsl-1.0',
+        value: 'boost',
       },
     ]
   }
