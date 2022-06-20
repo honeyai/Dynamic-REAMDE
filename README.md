@@ -35,6 +35,7 @@ Ensure you have node.js on your system. After closing this repo, run ```npm i```
 Once you run ```node index.js``` answer all the prompts. Once that's done, you should shortly see a new READme file or if you already have one it should write the new info provided into the existing READme.
 
 [Video example](https://drive.google.com/file/d/1QDUR2V3JC8ClvOgJmhkkMAqCEAx2vhvy/view)
+<iframe src="https://drive.google.com/file/d/1QDUR2V3JC8ClvOgJmhkkMAqCEAx2vhvy/preview" width="640" height="480"></iframe>
 
 ## License
 This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.<br />
