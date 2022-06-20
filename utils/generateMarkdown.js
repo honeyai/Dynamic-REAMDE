@@ -4,9 +4,16 @@ let year = new Date().getFullYear();
 const generateREADME = (answers) => {
   //project links
   let thirdPartyLinks = '';
+  let thirdPartyArray = answers.thirdParty.split(',');
   let title = answers.title.replace(' ', '-');
   if (answers.thirdParty) {
-    thirdPartyLinks = answers.thirdParty.split(',').join('<br>')
+    thirdPartyArray.forEach(word => {
+      if (thirdPartyArray.indexOf(word) % 2 === 0) {
+        thirdPartyLinks = thirdPartyArray.join(`(${word})`);
+      } else {
+        thirdPartyLinks = thirdPartyArray.join(`[${word}]`)
+      }
+    });
   };
 
   return `# ${title.toUpperCase()}
@@ -31,7 +38,7 @@ const generateREADME = (answers) => {
 ##  Project Links
 https://github.com/${answers.username.trim().toLowerCase()}/${title.trim()}<br>
 
-#Third Party Used:<br>
+# Third Party Used:<br>
 ${thirdPartyLinks}
   
 ## Project Objective
