@@ -4,15 +4,15 @@ let year = new Date().getFullYear();
 const generateREADME = (answers) => {
   //project links
   let thirdPartyLinks = '';
-
+  let title = answers.title.replace(' ', '-');
   if (answers.thirdParty) {
     thirdPartyLinks = answers.thirdParty.split(',').join('<br>')
   };
 
-  return `# ${answers.title.toUpperCase()}
+  return `# ${title.toUpperCase()}
 [![project-top-language](https://img.shields.io/github/languages/top/${answers.username
   .trim()
-  .toLowerCase()}/${answers.title.trim()}?color=blueviolet)](https://github.com/${answers.username.trim().toLowerCase()}/${answers.title.trim()})
+  .toLowerCase()}/${title.trim()}?color=blueviolet)](https://github.com/${answers.username.trim().toLowerCase()}/${title.trim()})
 [![license](https://img.shields.io/badge/License-${answers.license
   .toUpperCase()
   .split('-')
@@ -29,8 +29,9 @@ const generateREADME = (answers) => {
 #
 
 ##  Project Links
-https://github.com/${answers.username.trim().toLowerCase()}/${answers.title.trim()}<br>
-Third Party Used:<br>
+https://github.com/${answers.username.trim().toLowerCase()}/${title.trim()}<br>
+
+#Third Party Used:<br>
 ${thirdPartyLinks}
   
 ## Project Objective
