@@ -9,9 +9,9 @@ const generateREADME = (answers) => {
   if (answers.thirdParty) {
     thirdPartyArray.forEach(word => {
       if (thirdPartyArray.indexOf(word) % 2 === 0) {
-        thirdPartyLinks = thirdPartyArray.join(`(${word})`);
+        thirdPartyLinks = thirdPartyArray.join(`[${word}]`);
       } else {
-        thirdPartyLinks = thirdPartyArray.join(`[${word}]`)
+        thirdPartyLinks = thirdPartyArray.join(`(${word})`)
       }
     });
   };
@@ -38,7 +38,7 @@ const generateREADME = (answers) => {
 ##  Project Links
 https://github.com/${answers.username.trim().toLowerCase()}/${title.trim()}<br>
 
-# Third Party Used:<br>
+## Third Party Used:<br>
 ${thirdPartyLinks}
   
 ## Project Objective

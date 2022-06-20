@@ -15,8 +15,8 @@
 ##  Project Links
 https://github.com/honeyai/Dynamic-READme<br>
 
-#Third Party Used:<br>
-inquire.js[https://www.npmjs.com/package/inquirer]https://www.npmjs.com/package/inquirer
+## Third Party Used:<br>
+inquirer.js[inquirer.js]https://www.npmjs.com/package/inquirer
   
 ## Project Objective
 READmes are full of information. It's hard to always remember what you need to include and even then you might forget a section. This CLI aims at helping in that process by providing all the prompts and filling in a READme with your answers.
@@ -25,7 +25,7 @@ READmes are full of information. It's hard to always remember what you need to i
 
 ## Technologies 
 ```
-inquirer.js, javascript, promisfy.js
+inquirer.js,javascript,promisfy
 ```
 
 ## Installation
