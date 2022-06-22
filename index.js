@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 const {prompt} = require('inquirer');
 const {writeFile} = require('fs');
 const {promisify} = require('util');
